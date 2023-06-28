@@ -1,0 +1,93 @@
+@import "../../assets/sass/variable.scss";
+
+.account-validation-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    // margin-top: 10%;
+
+}
+
+.account_options{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 5%;
+    font-size: 1.2rem;
+    background: $fourth-color;
+    box-shadow: 0px 0px 5px grey;
+
+    .account_options_item{
+        border-bottom: 1px solid $second-color;
+        color: $first-color;
+        // border: 2px solid $first-color;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.account_main{
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: 100vh;
+    width: 100%;
+}
+
+.account_main_2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    overflow: auto;
+}
+
+.logout_icon{
+    height: 5px;
+}
+
+.account_options_item:hover{
+    border-bottom: 1px solid $third-color;
+    cursor: pointer;
+    color: $second-color;
+}
+
+.change_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.select_lab{
+    width: 215px;
+}
+
+.account_profile{
+    height: 60px;
+    width: 60px;
+}
+
+.img_acc{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    // border: 1px solid $first-color;
+    box-shadow: 0px 0px 5px grey;
+
+}
+
+.image_input{
+    // background-color: red;
+    color: $first-color;
+    width: 23%;
+}

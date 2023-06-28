@@ -1,0 +1,125 @@
+@import "../../assets/sass/variable.scss";
+
+*,*::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+ html{
+    font-size: 62.5;
+ }
+ body{
+    font-size:  1rem;
+ }
+
+ li{
+    list-style: none;
+ }
+
+ a{
+    text-decoration: none;
+    color: $fourth-color;
+    :hover{
+      color: $third-color;
+    }
+ }
+
+ .header_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vm;
+    background: $first-color;
+    font-family: $ft-font-header;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+ }
+
+ .logo{
+    display: flex;
+    align-items: center;
+ }
+
+ .header_menu{
+    display: flex;
+    align-items:  center;
+    justify-content: space-around;
+    gap: 3rem;
+ }
+
+ .header_toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: $fourth-color;
+    transition: 0.3s ease-in;
+ }
+
+ .header_toggler{
+    display: none;
+ }
+
+ @media screen and (max-width: 768px){
+    .header_toggler{
+        display: block;
+        cursor: pointer;
+    }
+    .header_menu{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50vw;
+        height: 93vh;
+        background: $first-color;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        justify-content: center;
+        align-items: start;
+    }
+ }
+
+.header_active{
+    transform: translateX(0%);
+}
+
+.ft_logo{
+   height: 50px;
+}
+
+.chatIcon{
+   // margin-top: 5%;
+   margin-right: 3%;
+}
+
+.menuIcon{
+   margin-top: 2%;
+   margin-right: 3%;
+}
+
+.fitnessIcon{
+   margin-top: 2%;
+   margin-right: 3%;
+}
+
+.diversityIcon{
+   margin-top: 2%;
+   margin-right: 3%;
+}
+
+.infoIcon{
+   margin-top: 2%;
+   margin-right: 3%;
+}
+
+.header_link{
+   display: flex;
+   align-items: center;
+}
+
+.img_header{
+   height: 21px;
+   width: 21px;
+   border-radius: 50px;
+   margin-right: 10%;
+   border: 1px solid $fourth-color;
+}

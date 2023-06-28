@@ -1,0 +1,49 @@
+@import "../../assets/sass/variable.scss";
+
+.specialists_container{
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: 100vh;
+    width: 100vw;
+    color: $first-color;
+}
+
+.specialists_main{
+    display: grid;
+    grid-template-rows: 7% 38% 5% 7% 38% 5%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    // margin-right: 5%;
+}
+
+.specialists_train{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    // padding: 3%;
+}
+
+.become_specialist{
+    color: $third-color;
+}
+
+.become_specialist:hover{
+    cursor: pointer;
+    color: $fourth-color;
+}
+
+.pagination{
+    height: 100%;
+    // width: 20%;
+    display: flex;
+    flex-direction: row;
+    color: $first-color;
+    font-family: $ft-font-header;
+    justify-content: center;
+    align-items: center;
+    
+}

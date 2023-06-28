@@ -1,0 +1,51 @@
+@import "../../assets/sass/variable.scss";
+
+.diets_page{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7% 86% 7%;
+    color: $first-color;
+    // gap: 1%;
+
+
+    .diets_page_container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+        padding: 1%;
+        height: 80%;
+        padding: 4%;
+
+        .form_diets{
+            width: 10%;
+        }
+    }
+
+    .diets_page_main{
+        height: 100%;
+        width: auto;
+        // margin-top: 2%;
+        // margin-bottom: 2%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5%;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .pagination{
+        height: 100%;
+        // width: 20%;
+        display: flex;
+        flex-direction: row;
+        color: $first-color;
+        font-family: $ft-font-header;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

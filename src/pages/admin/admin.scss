@@ -1,0 +1,63 @@
+@import "../../assets/sass/variable.scss";
+
+.admin_image{
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.admin_image:hover{
+    max-width: 35px;
+    max-height: 35px;
+    cursor: pointer;
+}
+
+.admin_button {
+    background: red;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid red;
+    transition: 0.5s;
+}
+
+.admin_button:hover{
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.281);
+    // height: 30px;
+}
+
+.admin_button_a {
+    background: $first-color;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid $first-color;
+    transition: 0.5s;
+}
+
+.admin_button_a:hover{
+    cursor: pointer;
+    background: $third-color;
+}
+
+.admin{
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: 100vh;
+    width: 100vw;
+    // gap: 5%;
+}
+
+.admin_link{
+    color: $third-color;
+    transition: 0.5s;
+}
+
+
+.admin_link:hover{
+    cursor: pointer;
+    color: $first-color;
+}
+
+.admin_container{
+    padding: 5%;
+    overflow: scroll;
+}

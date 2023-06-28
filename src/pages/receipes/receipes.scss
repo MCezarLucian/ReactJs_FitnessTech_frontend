@@ -1,0 +1,95 @@
+@import "../../assets/sass/variable.scss";
+
+.receips_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: 0;
+    
+    .receips_page_main{
+        padding: 1%;
+    }
+
+    .paper{
+        position: relative;
+        margin-top: 2%;
+        margin-left: 8%;
+        // width: 100%;
+        width: 400px;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        margin-top: 2%;
+        // background: $fourth-color;
+        // box-shadow: 0px 0px 1px $first-color;
+        width: 400px;
+        // margin: 0;
+
+        .list_item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            align-items: start;
+            // height: 40px;
+            height: 100%;
+            // margin-top: 3%;
+            width: 100%;
+            // font-size: 1.4rem;
+            padding: 2%;
+            // background: $fourth-color;
+            // box-shadow: 0px 0px 1px $first-color;
+
+        }
+    }
+}
+.list_item:hover{
+    background: $fourth-color;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    height: 80%;
+    width: 50%;
+}
+
+.modal_box{
+    display: flex;
+    flex-direction: column;
+    // padding: 4%;
+    list-style: disc;
+
+}
+
+.list_ul{
+    list-style-type: disc;
+}
+
+.title{
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.ll{
+    margin-bottom: 1%;
+}
+
+.h1_m{
+    margin-left: 8%;
+    // margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 0;
+}

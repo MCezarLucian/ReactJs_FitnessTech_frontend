@@ -1,0 +1,24 @@
+@import "../../assets/sass/variable.scss";
+
+.button_login{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: $first-color;
+    border: 0px;
+    border-radius: 5px;
+    color: $fourth-color;
+    box-shadow: 0px 0px 10px grey;
+    font-family: $ft-font-header;
+    padding: 5%;
+    font-size: 1.2rem;
+    border: 2px solid $first-color;
+    transition: 0.8s;
+    
+}
+
+.button_login:hover {
+    background-color: $fourth-color;
+    border: 2px solid $first-color;
+    color: $first-color;
+}

@@ -1,0 +1,15 @@
+@import "../../assets/sass/variable.scss";
+
+.support{
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: 100vh;
+    width: 100vw;
+
+    .support_container{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        align-items: center;
+    }
+}

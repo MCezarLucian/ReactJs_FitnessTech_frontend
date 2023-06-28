@@ -1,0 +1,111 @@
+@import "../../assets/sass/variable.scss";
+
+.chat_container{
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chat_main{
+    height: 100%;
+    width: 100%;
+    // padding: 10%;
+    // background: red;
+    border: 1px solid black;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat_main_2{
+    padding: 2%;
+    height: 80%;
+    width: 70%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px grey;
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+    background: $first-color;
+    border-radius: 20px;
+}
+
+.chat_title{
+    color: $fourth-color;
+    font-size: 2rem;
+}
+
+.chat_messages{
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    overflow: auto;
+
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    scroll-snap-align: end;
+}
+
+
+.message_sender{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    // justify-content: center;
+    align-items: end;
+    // padding: 1%;
+    // background: $fourth-color;
+    .MuiTypography-root.MuiTypography-body2.MuiListItemText-secondary.css-83ijpv-MuiTypography-root {
+        background: $third-color;
+        height: 100%;
+        padding: 1%;
+        border-radius: 10px;
+        color: $first-color;
+      }
+}
+
+.message_receiver{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    // justify-content: center;
+    align-items: start;
+    .MuiTypography-root.MuiTypography-body2.MuiListItemText-secondary.css-83ijpv-MuiTypography-root {
+        background: $fourth-color;
+        height: 100%;
+        padding: 1%;
+        border-radius: 10px;
+        color: $first-color;
+      }
+}
+
+.chat_sender{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    gap: 2%;
+    padding: 2%;
+    justify-content: space-evenly
+}
+
+.chat_text_field{
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+        height: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }

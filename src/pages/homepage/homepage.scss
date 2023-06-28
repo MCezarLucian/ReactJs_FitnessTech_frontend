@@ -1,0 +1,74 @@
+@import "../../assets/sass/variable.scss";
+
+.homepage_main{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7% 93%;
+    font-family: $ft-font-header;
+
+    .homepage_box{
+        background-image: url("../../assets/images/homepage10.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .homepage_box1{
+        // text-align:justify;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .button_login{
+            height: 10%;
+        }
+        gap: 5%;
+        color: white;
+        padding: 5%;
+        .homepage_title{
+            font-size: 2.8rem;
+            text-shadow: grey 0px 0px 10px;
+        }
+        
+        .homepage_statement{
+            font-size: 1.2rem;
+            justify-content: flex-start;
+        }
+    }
+
+    .homepage_box2{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.ft_home_l{
+    height: 45%;
+    width: 45%;
+    margin-left: 15%;
+    border-radius: 30px;
+    // border: 2px solid white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.button_login{
+    width: 30%;
+    
+}
+
+@media screen and (max-width: 768px){
+    .homepage_box2{
+        display: none;
+    }
+}

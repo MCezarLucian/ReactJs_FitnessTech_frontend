@@ -1,0 +1,62 @@
+@import "../../assets/sass/variable.scss";
+
+
+.certification_main{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-rows: 7% 93%;
+    // gap: 10px;
+}
+
+.certification-form-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    padding: 2%;
+    justify-content: center;
+    
+
+    .certification_form{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // padding: 2%;
+
+        .certification-form-textarea{
+            height: 200px;
+        }
+
+        .certification-form-file-input{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 7px;
+        }
+
+    }
+
+    .certification-form-submit-button {
+        margin-top: 20px;
+        background-color: $first-color;
+        color: white;
+        transition: background-color 0.3s ease;
+        width: 20%;
+      }
+      
+      .certification-form-submit-button:hover {
+        background-color: #7aa7d6;
+      }
+}
+
+.upload_img{
+    height: 30px;
+    width: 30px;
+}

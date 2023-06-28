@@ -1,0 +1,58 @@
+@import "../../assets/sass/variable.scss";
+
+.diet_page{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7% 86% 7%;
+    
+    .diet_page_main{
+        // display: flex;
+        // flex-direction: column;
+        padding: 5%;
+
+        .diet_img{
+            height: 280px;
+            width: 280px;
+            float: right;
+            border-radius: 30px;
+            padding: 1%;
+        }
+        
+        .diet_page_main_v2{
+            // display: flex;
+            // flex-direction: column;
+            display: inline;
+            text-align: justify;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            text-indent: 40px;
+            
+        }
+
+        .diet_page_title{
+            color: $first-color;
+            font-size: 3rem;
+        }
+
+        .diet_page_header{
+            margin-top: 3%;
+            color: $first-color;
+        }
+
+        .diet_page_menu_h3{
+            margin-top: 2%;
+            color: $first-color;
+            list-style: circle;
+        }
+
+        .diet_page_content_item{
+            list-style: disc;
+        }
+
+        .border{
+            height: 10%;
+        }
+    }
+
+}

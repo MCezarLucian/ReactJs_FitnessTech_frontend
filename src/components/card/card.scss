@@ -1,0 +1,96 @@
+@import "../../assets/sass/variable.scss";
+
+.card_main{
+    margin: 0;
+    position:  relative;
+    width: 30%;
+    height: 40%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background: $second-color;
+    color: white;
+    font-family: $ft-font-header;
+
+    
+    .content{
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .read_more{
+            margin-top: 5%;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            width: 40%;
+        }
+    }
+}  
+.card_main:hover{
+    border: 1px solid $second-color;
+    color: $second-color;
+    background: $fourth-color;
+
+    .content{
+        .read_more{
+            cursor: pointer;
+            color: $second-color;
+            border: 1px solid $second-color;
+        }
+    }
+    
+}
+
+.modal{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $ft-font-header;
+}
+
+.modal_main_t{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    background: white;
+    gap: 5%;
+    border-radius: 20px;
+    color: $first-color;
+    overflow: scroll;
+    overflow: hidden;
+    // box-shadow: 0px 0px 10px black;
+}
+
+.table{
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.modal_list{
+    list-style-type: circle;
+    columns: 4;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1%;
+    cursor: pointer;
+}

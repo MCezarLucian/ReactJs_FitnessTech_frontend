@@ -1,0 +1,91 @@
+@import "../../assets/sass/variable.scss";
+
+.kcal_container{
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: 100vh;
+    width: 100vw;
+
+    .receips_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // gap: 20px;
+        padding: 2%;
+
+        .receips_page_main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kcal_items_container{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            gap: 20px;
+            background-color: $first-color;
+            padding: 2%;
+            height: 50%;
+            border: 1px solid $first-color;
+            width: 80%;
+            border-radius: 10px;
+
+            
+            .kcal_items{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                background: $fourth-color;
+                font-size: 1rem;
+                height: 100%;
+                // gap: 10px;
+                // background-color: $fourth-color;
+                border-radius: 10px;
+
+                .kcal_item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    padding: 1%;
+                    
+                }
+            }
+
+            .kcal_total{
+                font-size: 1.4rem;
+                color: $fourth-color;
+            }
+
+            .kcal_button_container{
+                width:100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 15%;
+                .kcal_button{
+                    width: 50%;
+                    height: 100%;
+                    // padding: 2%;
+                    font-size: 1.2rem;
+                    border-radius: 10px;
+                    background: $fourth-color;
+                    color: $first-color;
+                    border: 1px solid white;
+                    box-shadow: 0px 0px 5px grey;
+                    transition: 0.5s;
+                }
+
+                .kcal_button:hover{
+                    cursor: pointer;
+                    background: white;
+                }
+            }
+        }
+    }
+}
+
